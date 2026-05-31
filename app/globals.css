@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-red: #c62828;
+  --color-brand-red-dark: #8e0000;
+  --color-brand-gold: #f9a825;
+  --color-brand-gold-light: #fff8e1;
+  --color-brand-navy: #1a237e;
+  --color-brand-navy-light: #283593;
+  --color-surface: #fafafa;
+  --color-muted: #64748b;
+  --font-sans: var(--font-poppins), system-ui, sans-serif;
+  --font-hindi: var(--font-noto-devanagari), var(--font-poppins), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1e293b;
+  font-family: var(--font-sans);
+}
+
+.font-hindi {
+  font-family: var(--font-hindi);
+}
+
+/* Subtle pattern for hero overlay */
+.hero-pattern {
+  background-image: radial-gradient(
+    circle at 20% 50%,
+    rgba(249, 168, 37, 0.08) 0%,
+    transparent 50%
+  );
+}
+
+.section-label {
+  @apply inline-block text-xs font-semibold uppercase tracking-widest text-brand-red mb-2;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+.input-field {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-brand-red focus:ring-2 focus:ring-brand-red/20;
+}
