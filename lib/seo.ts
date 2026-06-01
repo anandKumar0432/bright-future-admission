@@ -48,7 +48,7 @@ export function createPageMetadata({
   description,
   path,
   keywords = [],
-  ogImage = "/banner.png",
+  ogImage = "/banner2.jpg",
   ogImageAlt,
   noIndex = false,
 }: PageMetaInput): Metadata {
@@ -130,7 +130,7 @@ export function getRootMetadata(): Metadata {
         "Professional admission counselling for engineering, nursing, pharmacy, management & paramedical courses. Offices in Patna and Nawada, Bihar.",
       images: [
         {
-          url: absoluteUrl("/banner.png"),
+          url: absoluteUrl("/banner2.jpg"),
           width: 1200,
           height: 630,
           alt: "Bright Future Admission — courses and admission guidance banner",
@@ -142,7 +142,7 @@ export function getRootMetadata(): Metadata {
       title: `${siteConfig.name} | Admission Guidance in Bihar & India`,
       description:
         "Get admission help for B.Tech, ANM, GNM, MBA, Polytechnic & more. Bihar Student Credit Card support available.",
-      images: [absoluteUrl("/banner.png")],
+      images: [absoluteUrl("/banner2.jpg")],
     },
     robots: {
       index: true,
@@ -172,8 +172,8 @@ export function organizationJsonLd() {
     "@id": `${siteUrl}/#organization`,
     name: siteConfig.name,
     url: siteUrl,
-    logo: absoluteUrl("/banner.png"),
-    image: absoluteUrl("/banner.png"),
+    logo: absoluteUrl("/logo.svg"),
+    image: absoluteUrl("/banner2.jpg"),
     description:
       "Education admission consultancy helping students secure seats in professional courses across India with Bihar Student Credit Card guidance.",
     slogan: siteConfig.tagline,
@@ -240,7 +240,7 @@ export function localBusinessJsonLd() {
     "@type": "LocalBusiness",
     "@id": `${siteUrl}/#localbusiness`,
     name: siteConfig.name,
-    image: absoluteUrl("/banner.png"),
+    image: absoluteUrl("/banner2.jpg"),
     url: siteUrl,
     telephone: `+91-${siteConfig.primaryPhone}`,
     priceRange: "$$",

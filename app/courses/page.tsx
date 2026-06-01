@@ -17,7 +17,7 @@ export const metadata: Metadata = createPageMetadata({
     "paramedical courses admission",
     "MBA BCA MCA admission guidance",
   ],
-  ogImage: "/banner.png",
+  ogImage: "/banner2.jpg",
   ogImageAlt: "Bright Future Admission — popular courses and programs",
 });
 

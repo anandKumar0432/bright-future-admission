@@ -17,7 +17,7 @@ export const metadata: Metadata = createPageMetadata({
     "college admission help Bihar WhatsApp",
     "Hanuman Nagar Patna admission office",
   ],
-  ogImage: "/banner.png",
+  ogImage: "/banner2.jpg",
   ogImageAlt: "Contact Bright Future Admission — Patna and Nawada offices",
 });
 

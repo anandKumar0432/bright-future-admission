@@ -17,7 +17,7 @@ export const metadata: Metadata = createPageMetadata({
     "WhatsApp admission form",
     "free admission counselling",
   ],
-  ogImage: "/banner.png",
+  ogImage: "/banner2.jpg",
   ogImageAlt: "Apply for admission at Bright Future Admission",
 });
 

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Logo from "@/components/Logo";
 import { navLinks, siteConfig } from "@/lib/site-data";
 
 export default function Header() {
@@ -13,9 +14,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link href="/" className="flex items-center gap-3 min-w-0" onClick={() => setOpen(false)}>
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-red text-sm font-bold text-white">
-            BF
-          </div>
+          <Logo size={42} variant="default" className="shrink-0" />
           <div className="min-w-0">
             <p className="truncate text-sm font-bold text-brand-navy sm:text-base">
               {siteConfig.name}

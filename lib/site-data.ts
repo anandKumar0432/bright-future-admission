@@ -5,6 +5,10 @@ export const siteConfig = {
   slogan: "Give your dreams a new flight",
   sloganHi: "अपने सपनों को दें नई उड़ान",
   invocation: "|| जय श्री महाकाल ||",
+  owner: {
+    name: "Shivam Kumar",
+    title: "Career Counselor",
+  },
   primaryPhone: "7992256327",
   whatsappPhone: "917992256327",
   phones: ["7992256327", "7250513800", "7870607458", "6200871609"],

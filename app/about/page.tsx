@@ -18,8 +18,8 @@ export const metadata: Metadata = createPageMetadata({
     "BSCC admission guidance",
     "student counselling Bihar",
   ],
-  ogImage: "/owner-pic.jpeg",
-  ogImageAlt: "Bright Future Admission counsellor and founder",
+  ogImage: "/owner-pic-2.1.png",
+  ogImageAlt: "Shivam Kumar — Career Counselor at Bright Future Admission",
 });
 
 const services = [
@@ -73,29 +73,31 @@ export default function AboutPage() {
             <div className="relative mx-auto w-full max-w-md lg:max-w-none">
               <div className="overflow-hidden rounded-2xl border-4 border-brand-gold/30 shadow-xl">
                 <Image
-                  src="/owner-pic.jpeg"
-                  alt="Bright Future Admission founder and counsellor"
+                  src="/owner-pic-2.1.png"
+                  alt={`${siteConfig.owner.name} — ${siteConfig.owner.title} at Bright Future Admission`}
                   width={500}
                   height={650}
                   className="h-auto w-full object-cover object-top"
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 rounded-xl bg-brand-red px-5 py-3 text-white shadow-lg">
-                <p className="text-sm font-bold">Trusted Counsellor</p>
-                <p className="text-xs text-red-100">Patna &amp; Nawada</p>
+                <p className="text-sm font-bold">{siteConfig.owner.name}</p>
+                <p className="text-xs text-red-100">{siteConfig.owner.title}</p>
               </div>
             </div>
 
             <div>
               <span className="section-label">Who We Are</span>
+              <p className="text-sm font-medium text-brand-red">{siteConfig.owner.title}</p>
               <h2 className="text-2xl font-bold text-brand-navy sm:text-3xl">
-                {siteConfig.name}
+                {siteConfig.owner.name}
               </h2>
+              <p className="mt-1 text-lg font-semibold text-slate-700">{siteConfig.name}</p>
               <p className="font-hindi mt-2 text-brand-red-dark">{siteConfig.sloganHi}</p>
               <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
-                Bright Future Admission is a professional education consultancy based in Bihar,
-                dedicated to helping students secure admission in engineering, nursing, pharmacy,
-                management, polytechnic, paramedical, and medical courses across India.
+                {siteConfig.owner.name} is a dedicated career counselor at Bright Future Admission,
+                helping students secure admission in engineering, nursing, pharmacy, management,
+                polytechnic, paramedical, and medical courses across India.
               </p>
               <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
                 With offices in Patna and Nawada, our experienced team understands local student
@@ -184,10 +186,10 @@ export default function AboutPage() {
       <section className="border-t border-slate-100 bg-brand-navy py-12">
         <div className="mx-auto max-w-6xl px-4 text-center sm:px-6">
           <h2 className="text-xl font-bold text-white sm:text-2xl">
-            Talk to our counsellor today
+            Talk to {siteConfig.owner.name} today
           </h2>
           <p className="mt-2 text-sm text-blue-200">
-            Free guidance for admission in any course across India
+            {siteConfig.owner.title} — free guidance for admission in any course across India
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <Link

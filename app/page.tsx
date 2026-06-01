@@ -23,7 +23,7 @@ export const metadata: Metadata = createPageMetadata({
     "B.Tech admission Bihar 2026",
     "student credit card admission help",
   ],
-  ogImage: "/banner.png",
+  ogImage: "/banner2.jpg",
   ogImageAlt:
     "Bright Future Admission banner — engineering, nursing, pharmacy and management course admissions",
 });
@@ -76,7 +76,7 @@ export default function Home() {
       <section className="relative overflow-hidden bg-brand-navy" aria-labelledby="hero-heading">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="/banner.png"
+            src="/banner2.jpg"
             alt=""
             fill
             className="object-cover object-center"
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
             <div className="overflow-hidden rounded-2xl border-4 border-brand-gold/40 shadow-2xl">
               <Image
-                src="/banner.png"
+                src="/banner2.jpg"
                 alt="Bright Future Admission - courses and admission guidance"
                 width={800}
                 height={600}
