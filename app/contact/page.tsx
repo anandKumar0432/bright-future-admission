@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Facebook } from "@/components/icons/Facebook";
 import JsonLd from "@/components/JsonLd";
 import PageHero from "@/components/PageHero";
+import SocialLinks from "@/components/SocialLinks";
 import { siteConfig } from "@/lib/site-data";
 import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 
@@ -95,26 +97,18 @@ export default function ContactPage() {
               <div className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm sm:p-8">
                 <h2 className="text-lg font-bold text-brand-navy">Follow Us</h2>
                 <p className="mt-2 text-sm text-muted">
-                  Stay updated with admission news, deadlines, and tips.
+                  Stay updated with admission news, deadlines, and tips on Facebook.
                 </p>
-                <div className="mt-4 flex gap-3">
-                  {[
-                    { label: "Facebook", href: siteConfig.social.facebook, icon: "f" },
-                    { label: "Instagram", href: siteConfig.social.instagram, icon: "📷" },
-                    { label: "YouTube", href: siteConfig.social.youtube, icon: "▶" },
-                  ].map((social) => (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={social.label}
-                      className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-gold-light text-sm font-bold text-brand-navy transition hover:bg-brand-gold"
-                    >
-                      {social.icon}
-                    </a>
-                  ))}
-                </div>
+                <SocialLinks className="mt-4" />
+                <a
+                  href={siteConfig.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#1877F2] transition hover:text-brand-navy"
+                >
+                  <Facebook className="h-4 w-4" strokeWidth={2} aria-hidden="true" />
+                  Bright Future Admissions on Facebook
+                </a>
               </div>
 
               <Link

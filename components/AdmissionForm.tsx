@@ -6,11 +6,20 @@ import { admissionCourseOptions, siteConfig } from "@/lib/site-data";
 type FormData = {
   name: string;
   mobile: string;
+  email: string;
+  aadhaar: string;
   course: string;
   city: string;
 };
 
-const initial: FormData = { name: "", mobile: "", course: "", city: "" };
+const initial: FormData = {
+  name: "",
+  mobile: "",
+  email: "",
+  aadhaar: "",
+  course: "",
+  city: "",
+};
 
 export default function AdmissionForm() {
   const [form, setForm] = useState<FormData>(initial);
@@ -31,6 +40,15 @@ export default function AdmissionForm() {
       setError("Enter a valid 10-digit mobile number.");
       return false;
     }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
+      setError("Enter a valid email address.");
+      return false;
+    }
+    const aadhaarDigits = form.aadhaar.replace(/\s/g, "");
+    if (!/^\d{12}$/.test(aadhaarDigits)) {
+      setError("Enter a valid 12-digit Aadhaar number.");
+      return false;
+    }
     if (!form.course) {
       setError("Please select a course.");
       return false;
@@ -48,6 +66,8 @@ export default function AdmissionForm() {
       "",
       `*Name:* ${form.name.trim()}`,
       `*Mobile:* ${form.mobile.trim()}`,
+      `*Email:* ${form.email.trim()}`,
+      `*Aadhaar:* ${form.aadhaar.replace(/\s/g, "")}`,
       `*Course:* ${form.course}`,
       `*City:* ${form.city.trim()}`,
       "",
@@ -111,6 +131,35 @@ export default function AdmissionForm() {
             value={form.mobile}
             onChange={handleChange}
             placeholder="10-digit mobile number"
+            className="input-field"
+          />
+        </Field>
+      </div>
+
+      <div className="grid gap-5 sm:grid-cols-2">
+        <Field label="Email" htmlFor="email" required>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder="your.email@example.com"
+            className="input-field"
+          />
+        </Field>
+
+        <Field label="Aadhaar Number" htmlFor="aadhaar" required>
+          <input
+            id="aadhaar"
+            name="aadhaar"
+            type="text"
+            inputMode="numeric"
+            maxLength={14}
+            value={form.aadhaar}
+            onChange={handleChange}
+            placeholder="12-digit Aadhaar number"
             className="input-field"
           />
         </Field>

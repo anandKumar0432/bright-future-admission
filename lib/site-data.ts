@@ -23,12 +23,41 @@ export const siteConfig = {
     },
   ],
   social: {
-    facebook: "https://facebook.com",
+    facebook: "https://www.facebook.com/people/Bright-future-admissions/61566766245614/",
     instagram: "https://instagram.com",
     youtube: "https://youtube.com",
   },
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.199!2d85.1376!3d25.5941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDM1JzM5LjAiTiA4NcKwMDgnMTUuNCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+  developer: {
+    name: "Anand Kumar",
+    title: "Website Developer",
+    phone: "7033626094",
+    whatsappPhone: "917033626094",
+    tagline: "Professional websites — static or dynamic",
+    services: [
+      "Business & consultancy websites",
+      "Education & admission portals",
+      "Portfolio and personal sites",
+      "E-commerce and booking systems",
+      "Admin dashboards & custom web apps",
+      "Mobile-friendly, fast, and SEO-ready builds",
+    ],
+    websiteTypes: [
+      {
+        type: "Static Websites",
+        description:
+          "Fast, secure pages for businesses that need a clean online presence — brochures, contact info, and service listings.",
+        examples: ["Landing pages", "Small business sites", "Information portals"],
+      },
+      {
+        type: "Dynamic Websites",
+        description:
+          "Interactive sites with forms, databases, user accounts, and content that updates as your business grows.",
+        examples: ["Admission forms", "Admin panels", "Blogs & dashboards"],
+      },
+    ],
+  },
 };
 
 export const navLinks = [
@@ -37,6 +66,7 @@ export const navLinks = [
   { href: "/courses", label: "Courses" },
   { href: "/admission", label: "Apply Now" },
   { href: "/contact", label: "Contact" },
+  { href: "/developer", label: "Web Developer" },
 ];
 
 export const popularCourses = [

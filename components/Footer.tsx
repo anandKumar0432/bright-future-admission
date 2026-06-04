@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Logo from "@/components/Logo";
+import { Facebook } from "@/components/icons/Facebook";
+import SocialLinks from "@/components/SocialLinks";
 import { navLinks, siteConfig } from "@/lib/site-data";
 
 export default function Footer() {
@@ -18,6 +20,21 @@ export default function Footer() {
             Professional admission guidance for engineering, nursing, pharmacy, management,
             and paramedical courses across India — with Bihar Student Credit Card support.
           </p>
+          <div className="mt-5">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-brand-gold">
+              Follow us
+            </p>
+            <SocialLinks variant="light" />
+            <a
+              href={siteConfig.social.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-flex items-center gap-2 text-sm text-blue-100 transition hover:text-white"
+            >
+              <Facebook className="h-4 w-4 shrink-0" strokeWidth={2} aria-hidden="true" />
+              Facebook — Bright Future Admissions
+            </a>
+          </div>
         </div>
 
         <div>
@@ -62,8 +79,17 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-4 text-center text-xs text-blue-200 sm:flex-row sm:px-6 sm:text-left">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-4 text-center text-xs text-blue-200 sm:flex-row sm:px-6 sm:text-left">
           <p>© {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+          <a
+            href={siteConfig.social.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white transition hover:bg-[#1877F2]"
+          >
+            <Facebook className="h-4 w-4" strokeWidth={2} aria-hidden="true" />
+            Facebook
+          </a>
           <p className="font-hindi">{siteConfig.invocation}</p>
         </div>
       </div>
