@@ -6,7 +6,7 @@ import CoursesClient from "./CoursesClient";
 export const metadata: Metadata = createPageMetadata({
   title: "Courses & Admission Programs",
   description:
-    "Explore nursing (ANM, GNM), engineering (B.Tech), pharmacy, MBA, polytechnic, paramedical & MBBS courses. Eligibility, duration, fees and admission process guidance in Bihar.",
+    "Explore nursing (ANM, GNM), engineering (B.Tech), pharmacy, MBA, polytechnic, paramedical, and MBBS options at leading colleges in India and universities abroad. Get eligibility and admission guidance in Bihar.",
   path: "/courses",
   keywords: [
     "ANM course admission Bihar",
@@ -16,9 +16,11 @@ export const metadata: Metadata = createPageMetadata({
     "polytechnic diploma Bihar",
     "paramedical courses admission",
     "MBA BCA MCA admission guidance",
+    "MBBS admission India and abroad",
+    "MBBS top medical colleges India",
   ],
   ogImage: "/banner2.jpg",
-  ogImageAlt: "Bright Future Admission — popular courses and programs",
+  ogImageAlt: "bright career admission — popular courses and programs",
 });
 
 export default function CoursesPage() {

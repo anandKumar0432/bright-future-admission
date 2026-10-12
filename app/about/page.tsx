@@ -9,17 +9,17 @@ import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "About Us",
   description:
-    "Meet Bright Future Admission — trusted education consultants in Patna & Nawada helping students with college admission, Bihar Student Credit Card, and end-to-end counselling across India.",
+    "Meet bright career admission — trusted education consultants in Patna & Nawada helping students with college admission, Bihar Student Credit Card, and end-to-end counselling across India.",
   path: "/about",
   keywords: [
-    "about Bright Future Admission",
+    "about bright career admission",
     "admission consultant Patna",
     "education consultancy Nawada Bihar",
     "BSCC admission guidance",
     "student counselling Bihar",
   ],
   ogImage: "/owner-pic-2.1.png",
-  ogImageAlt: "Shivam Kumar — Career Counselor at Bright Future Admission",
+  ogImageAlt: "Shivam Kumar — Career Counselor at bright career admission",
 });
 
 const services = [
@@ -74,7 +74,7 @@ export default function AboutPage() {
               <div className="overflow-hidden rounded-2xl border-4 border-brand-gold/30 shadow-xl">
                 <Image
                   src="/owner-pic-2.1.png"
-                  alt={`${siteConfig.owner.name} — ${siteConfig.owner.title} at Bright Future Admission`}
+                  alt={`${siteConfig.owner.name} — ${siteConfig.owner.title} at bright career admission`}
                   width={500}
                   height={650}
                   className="h-auto w-full object-cover object-top"
@@ -95,7 +95,7 @@ export default function AboutPage() {
               <p className="mt-1 text-lg font-semibold text-slate-700">{siteConfig.name}</p>
               <p className="font-hindi mt-2 text-brand-red-dark">{siteConfig.sloganHi}</p>
               <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
-                {siteConfig.owner.name} is a dedicated career counselor at Bright Future Admission,
+                {siteConfig.owner.name} is a dedicated career counselor at bright career admission,
                 helping students secure admission in engineering, nursing, pharmacy, management,
                 polytechnic, paramedical, and medical courses across India.
               </p>

@@ -15,7 +15,7 @@ export default function SocialLinks({ variant = "default", className = "" }: Soc
         href={siteConfig.social.facebook}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Follow Bright Future Admission on Facebook"
+        aria-label="Follow bright career admission on Facebook"
         className={
           isLight
             ? "flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-white transition hover:bg-[#1877F2] hover:text-white"

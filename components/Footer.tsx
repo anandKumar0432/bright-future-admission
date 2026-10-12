@@ -32,7 +32,7 @@ export default function Footer() {
               className="mt-3 inline-flex items-center gap-2 text-sm text-blue-100 transition hover:text-white"
             >
               <Facebook className="h-4 w-4 shrink-0" strokeWidth={2} aria-hidden="true" />
-              Facebook — Bright Future Admissions
+              Facebook — bright career admissions
             </a>
           </div>
         </div>

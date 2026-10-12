@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site-data";
 
 export default function FloatingContact() {
   const whatsappUrl = `https://wa.me/${siteConfig.whatsappPhone}?text=${encodeURIComponent(
-    "Hello Bright Future Admission, I want to know about admission.",
+    "Hello bright career admission, I want to know about admission.",
   )}`;
 
   return (

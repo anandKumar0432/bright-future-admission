@@ -14,7 +14,7 @@ import { createPageMetadata, faqJsonLd } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Admission Guidance in Bihar & India",
   description:
-    "Bright Future Admission — expert counselling for B.Tech, ANM, GNM, MBA, Polytechnic, Paramedical & pharmacy admissions. Bihar Student Credit Card support. Call 7992256327.",
+    "bright career admission — expert counselling for B.Tech, ANM, GNM, MBA, Polytechnic, Paramedical & pharmacy admissions. Bihar Student Credit Card support. Call 7992256327.",
   path: "/",
   keywords: [
     "college admission consultant Patna",
@@ -25,14 +25,14 @@ export const metadata: Metadata = createPageMetadata({
   ],
   ogImage: "/banner2.jpg",
   ogImageAlt:
-    "Bright Future Admission banner — engineering, nursing, pharmacy and management course admissions",
+    "bright career admission banner — engineering, nursing, pharmacy and management course admissions",
 });
 
 const homeFaqs = [
   {
-    question: "Which courses does Bright Future Admission help with?",
+    question: "Which courses does bright career admission help with?",
     answer:
-      "We provide admission guidance for ANM, GNM, B.Sc Nursing, B.Tech, M.Tech, Polytechnic, BBA, MBA, BCA, MCA, B.Ed, B.Pharma, D.Pharma, Paramedical, MBBS, and related professional courses across India.",
+      "We provide admission guidance for ANM, GNM, B.Sc Nursing, B.Tech, M.Tech, Polytechnic, BBA, MBA, BCA, MCA, B.Ed, B.Pharma, D.Pharma, Paramedical, and MBBS options in India and abroad.",
   },
   {
     question: "Do you help with Bihar Student Credit Card admissions?",
@@ -40,7 +40,7 @@ const homeFaqs = [
       "Yes. We guide eligible Bihar students through the Student Credit Card process, including documentation and linking it with college admission.",
   },
   {
-    question: "Where are Bright Future Admission offices located?",
+    question: "Where are bright career admission offices located?",
     answer:
       "Our head office is in Hanuman Nagar, Patna, and our branch office is in Warisaliganj, Nawada, Bihar.",
   },
@@ -66,7 +66,7 @@ const courseColors = [
 
 export default function Home() {
   const whatsappUrl = `https://wa.me/${siteConfig.whatsappPhone}?text=${encodeURIComponent(
-    "Hello, I want admission guidance from Bright Future Admission.",
+    "Hello, I want admission guidance from bright career admission.",
   )}`;
 
   return (
@@ -133,7 +133,7 @@ export default function Home() {
             <div className="overflow-hidden rounded-2xl border-4 border-brand-gold/40 shadow-2xl">
               <Image
                 src="/banner2.jpg"
-                alt="Bright Future Admission - courses and admission guidance"
+                alt="bright career admission - courses and admission guidance"
                 width={800}
                 height={600}
                 className="h-auto w-full"

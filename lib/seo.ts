@@ -1,11 +1,29 @@
 import type { Metadata } from "next";
 import { siteConfig } from "./site-data";
 
-export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://brightfutureadmission.in";
+const fallbackSiteUrl = "https://brightfutureadmission.in";
+
+function resolveSiteUrl(rawUrl?: string): string {
+  const candidate = rawUrl?.trim();
+
+  if (!candidate) {
+    return fallbackSiteUrl;
+  }
+
+  try {
+    const parsed = new URL(candidate);
+    return parsed.protocol === "http:" || parsed.protocol === "https:"
+      ? parsed.origin
+      : fallbackSiteUrl;
+  } catch {
+    return fallbackSiteUrl;
+  }
+}
+
+export const siteUrl = resolveSiteUrl(process.env.NEXT_PUBLIC_SITE_URL);
 
 export const defaultKeywords = [
-  "Bright Future Admission",
+  "bright career admission",
   "admission consultancy Bihar",
   "college admission Patna",
   "Bihar Student Credit Card admission",
@@ -30,7 +48,17 @@ export const siteRoutes = [
 ];
 
 export function absoluteUrl(path: string): string {
-  const normalized = path.startsWith("/") ? path : `/${path}`;
+  if (!path) {
+    return siteUrl;
+  }
+
+  const trimmedPath = path.trim();
+
+  if (/^https?:\/\//i.test(trimmedPath)) {
+    return trimmedPath.replace(/\/$/, "");
+  }
+
+  const normalized = trimmedPath.startsWith("/") ? trimmedPath : `/${trimmedPath}`;
   return `${siteUrl.replace(/\/$/, "")}${normalized}`;
 }
 
@@ -110,7 +138,7 @@ export function getRootMetadata(): Metadata {
       template: `%s | ${siteConfig.name}`,
     },
     description:
-      "Bright Future Admission helps students get admission in B.Tech, Nursing, Pharmacy, MBA, Polytechnic, Paramedical and more across India. Bihar Student Credit Card guidance available in Patna & Nawada.",
+      "bright career admission helps students get admission in B.Tech, Nursing, Pharmacy, MBA, Polytechnic, Paramedical and more across India. Bihar Student Credit Card guidance available in Patna & Nawada.",
     keywords: defaultKeywords,
     authors: [{ name: siteConfig.name, url: siteUrl }],
     creator: siteConfig.name,
@@ -134,7 +162,7 @@ export function getRootMetadata(): Metadata {
           url: absoluteUrl("/banner2.jpg"),
           width: 1200,
           height: 630,
-          alt: "Bright Future Admission — courses and admission guidance banner",
+          alt: "bright career admission — courses and admission guidance banner",
         },
       ],
     },
@@ -289,7 +317,7 @@ export function courseListJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Admission Courses at Bright Future Admission",
+    name: "Admission Courses at bright career admission",
     description: "Professional courses with admission guidance across India",
     url: absoluteUrl("/courses"),
     numberOfItems: courses.length,
@@ -299,7 +327,10 @@ export function courseListJsonLd() {
       item: {
         "@type": "Course",
         name: course,
-        description: `Admission guidance for ${course} in India`,
+        description:
+          course === "MBBS"
+            ? "Admission guidance for MBBS options at leading colleges in India and universities abroad."
+            : `Admission guidance for ${course} in India`,
         provider: { "@id": `${siteUrl}/#organization` },
         url: absoluteUrl("/courses"),
       },

@@ -71,7 +71,7 @@ export default function AdmissionForm() {
       `*Course:* ${form.course}`,
       `*City:* ${form.city.trim()}`,
       "",
-      "Sent via Bright Future Admission website",
+      "Sent via bright career admission website",
     ].join("\n");
   }
 

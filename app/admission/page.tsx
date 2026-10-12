@@ -8,7 +8,7 @@ import { breadcrumbJsonLd, createPageMetadata, faqJsonLd } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Apply Now — Admission Form",
   description:
-    "Apply for admission in B.Tech, nursing, pharmacy, MBA, polytechnic & paramedical courses. Free inquiry form — submit via WhatsApp. Bright Future Admission, Patna & Nawada.",
+    "Apply for admission in B.Tech, nursing, pharmacy, MBA, polytechnic & paramedical courses. Free inquiry form — submit via WhatsApp. bright career admission, Patna & Nawada.",
   path: "/admission",
   keywords: [
     "admission form Bihar",
@@ -18,7 +18,7 @@ export const metadata: Metadata = createPageMetadata({
     "free admission counselling",
   ],
   ogImage: "/banner2.jpg",
-  ogImageAlt: "Apply for admission at Bright Future Admission",
+  ogImageAlt: "Apply for admission at bright career admission",
 });
 
 const admissionFaqs = [
@@ -35,7 +35,7 @@ const admissionFaqs = [
   {
     question: "Which courses can I apply for?",
     answer:
-      "You can apply for ANM, GNM, B.Tech, MBA, BCA, MCA, Polytechnic, Paramedical, Pharmacy, B.Ed, MBBS, and other professional courses listed on our courses page.",
+      "You can apply for ANM, GNM, B.Tech, MBA, BCA, MCA, Polytechnic, Paramedical, Pharmacy, B.Ed, and MBBS programs in India or abroad, along with other courses listed on our courses page.",
   },
 ];
 

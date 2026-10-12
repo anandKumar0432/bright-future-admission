@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Bright Future Admission",
+  name: "bright career admission",
   tagline: "Your Future, Our Priority",
   taglineHi: "आपका भविष्य, हमारी प्राथमिकता",
   slogan: "Give your dreams a new flight",
@@ -23,7 +23,7 @@ export const siteConfig = {
     },
   ],
   social: {
-    facebook: "https://www.facebook.com/people/Bright-future-admissions/61566766245614/",
+    facebook: "https://www.facebook.com/people/bright-career-admissions/61566766245614/",
     instagram: "https://instagram.com",
     youtube: "https://youtube.com",
   },
@@ -74,6 +74,7 @@ export const popularCourses = [
   { name: "GNM", slug: "nursing" },
   { name: "B.Tech", slug: "engineering" },
   { name: "B.Sc Nursing", slug: "nursing" },
+  { name: "MBBS", slug: "mbbs" },
   { name: "Polytechnic", slug: "polytechnic" },
   { name: "Paramedical", slug: "paramedical" },
   { name: "B.Ed", slug: "management" },
@@ -288,13 +289,30 @@ export const courseCategories: CourseCategory[] = [
         duration: "1–2 Years",
         admissionProcess: "Direct admission with document preparation support.",
       },
+    ],
+  },
+  {
+    id: "mbbs",
+    title: "MBBS in India & Abroad",
+    description:
+      "Explore MBBS admission options at leading medical colleges in India and recognized universities abroad, with guidance on eligibility, entrance requirements, documentation, and the admission process.",
+    courses: [
       {
-        name: "MBBS",
-        tagline: "Serve humanity — become a doctor",
-        eligibility: "10+2 with PCB — NEET qualified",
-        duration: "5.5 Years",
+        name: "MBBS in India",
+        tagline: "Guidance for medical college options across India",
+        eligibility: "10+2 with Physics, Chemistry, Biology and English; NEET qualification as required by current regulations",
+        duration: "5.5 Years (including internship; may vary by program)",
         admissionProcess:
-          "NEET-based counselling for India and abroad options. End-to-end guidance.",
+          "Guidance on NEET-based counselling, college options, eligibility, and required documents. Admission depends on exam results, counselling rules, and seat availability.",
+      },
+      {
+        name: "MBBS Abroad",
+        tagline: "Compare international medical university options",
+        eligibility:
+          "10+2 with Physics, Chemistry and Biology; NEET qualification and other requirements may apply under current Indian regulations",
+        duration: "Varies by country and university",
+        admissionProcess:
+          "Guidance on comparing universities, entry requirements, documentation, and the application process. Verify recognition, licensing eligibility, fees, and current regulations before applying.",
       },
     ],
   },

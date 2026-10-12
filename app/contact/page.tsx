@@ -10,22 +10,22 @@ import { breadcrumbJsonLd, createPageMetadata } from "@/lib/seo";
 export const metadata: Metadata = createPageMetadata({
   title: "Contact Us",
   description:
-    "Contact Bright Future Admission — call 7992256327, 7250513800, 7870607458, 6200871609. Offices in Hanuman Nagar Patna & Warisaliganj Nawada. WhatsApp & map available.",
+    "Contact bright career admission — call 7992256327, 7250513800, 7870607458, 6200871609. Offices in Hanuman Nagar Patna & Warisaliganj Nawada. WhatsApp & map available.",
   path: "/contact",
   keywords: [
-    "Bright Future Admission contact number",
+    "bright career admission contact number",
     "admission consultant Patna phone",
     "education consultancy Nawada contact",
     "college admission help Bihar WhatsApp",
     "Hanuman Nagar Patna admission office",
   ],
   ogImage: "/banner2.jpg",
-  ogImageAlt: "Contact Bright Future Admission — Patna and Nawada offices",
+  ogImageAlt: "Contact bright career admission — Patna and Nawada offices",
 });
 
 export default function ContactPage() {
   const whatsappUrl = `https://wa.me/${siteConfig.whatsappPhone}?text=${encodeURIComponent(
-    "Hello Bright Future Admission, I need admission guidance.",
+    "Hello bright career admission, I need admission guidance.",
   )}`;
 
   return (
@@ -107,7 +107,7 @@ export default function ContactPage() {
                   className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#1877F2] transition hover:text-brand-navy"
                 >
                   <Facebook className="h-4 w-4" strokeWidth={2} aria-hidden="true" />
-                  Bright Future Admissions on Facebook
+                  bright career admissions on Facebook
                 </a>
               </div>
 
@@ -127,7 +127,7 @@ export default function ContactPage() {
                 <p className="text-sm text-muted">Head Office — Hanuman Nagar, Patna</p>
               </div>
               <iframe
-                title="Bright Future Admission office location"
+                title="bright career admission office location"
                 src={siteConfig.mapEmbedUrl}
                 width="100%"
                 height="450"
