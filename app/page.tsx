@@ -42,7 +42,7 @@ const homeFaqs = [
   {
     question: "Where are bright career admission offices located?",
     answer:
-      "Our head office is in Hanuman Nagar, Patna, and our branch office is in Warisaliganj, Nawada, Bihar.",
+      "Our head office is in Warisaliganj, Nawada, Bihar, and our branch office is in Warisaliganj, Nawada, Bihar.",
   },
   {
     question: "How can I apply for admission?",

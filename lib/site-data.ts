@@ -11,14 +11,10 @@ export const siteConfig = {
   },
   primaryPhone: "7992256327",
   whatsappPhone: "917992256327",
-  phones: ["7992256327", "7250513800", "7870607458", "6200871609"],
+  phones: ["7992256327", "7250513800", "7870607458"],
   addresses: [
     {
       label: "Head Office",
-      line: "Hanuman Nagar, Patna, Bihar",
-    },
-    {
-      label: "Branch Office",
       line: "Warisaliganj, Nawada, Bihar",
     },
   ],
@@ -28,7 +24,7 @@ export const siteConfig = {
     youtube: "https://youtube.com",
   },
   mapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.199!2d85.1376!3d25.5941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDM1JzM5LjAiTiA4NcKwMDgnMTUuNCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3615.755792123078!2d85.6343870753757!3d25.008412777833044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDAwJzMwLjMiTiA4NcKwMzgnMTMuMSJF!5e0!3m2!1sen!2sin!4v1791822171807!5m2!1sen!2sin",
   developer: {
     name: "Anand Kumar",
     title: "Website Developer",
