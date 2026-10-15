@@ -15,6 +15,9 @@ export const siteConfig = {
   addresses: [
     {
       label: "Head Office",
+      line: "Hanuman Nagar, Patna, Bihar",
+    },{
+      label: "Branch Office",
       line: "Warisaliganj, Nawada, Bihar",
     },
   ],

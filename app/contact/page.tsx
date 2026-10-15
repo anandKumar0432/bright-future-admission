@@ -124,7 +124,7 @@ export default function ContactPage() {
             <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-lg">
               <div className="bg-brand-gold-light px-6 py-4">
                 <h2 className="font-bold text-brand-navy">Find Us on Map</h2>
-                <p className="text-sm text-muted">Head Office — Warisaliganj, Nawada, Bihar</p>
+                <p className="text-sm text-muted">Branch Office — Warisaliganj, Nawada, Bihar</p>
               </div>
               <iframe
                 title="bright career admission office location"
